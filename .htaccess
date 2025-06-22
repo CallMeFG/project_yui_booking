@@ -1,0 +1,14 @@
+# Menetapkan file default untuk dijalankan saat direktori diakses
+DirectoryIndex public/index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Pengecualian untuk folder aset (css, js, img) agar tidak dialihkan ke index.php
+    RewriteRule ^(css|js|img)(/.*)?$ public/$1$2 [L,NC]
+
+    # Aturan utama untuk routing halaman melalui index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php?url=$1 [L,QSA]
+</IfModule>

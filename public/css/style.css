@@ -1,0 +1,323 @@
+/* Custom Styles for YUI BOOKING */
+
+.navbar-brand-custom {
+    color: #8B0000 !important; /* Maroon color */
+    font-weight: bold;
+  }
+  
+  /* Styling for active navigation link */
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .show > .nav-link {
+    color: #fff !important; /* Ensures active link text is white */
+    border-bottom: 3px solid #8B0000; /* Maroon underline */
+    padding-bottom: 5px; /* Spacing for the underline */
+  }
+  /* Untuk ditambahkan di style.css jika mau */
+.text-maroon {
+    color: #8B0000 !important;
+  }
+  /* Custom Styles for a Smaller, Compact Footer */
+.footer-compact {
+    padding-top: 2.5rem !important; /* Mengurangi spasi dari sebelumnya */
+    padding-bottom: 1.5rem !important;
+}
+
+.footer-compact h5 {
+    font-size: 1rem; /* Ukuran font lebih kecil untuk judul */
+    font-weight: bold;
+}
+
+.footer-compact p,
+.footer-compact li,
+.footer-compact a {
+    font-size: 0.9rem; /* Ukuran font lebih kecil untuk teks dan link */
+}
+
+.footer-compact .social-icon i {
+    font-size: 1.25rem !important; /* Ukuran lebih kecil untuk ikon sosial */
+}
+/* Homepage - Hero Section Styles */
+.hero-section {
+    background-image: url('https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=1949&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Homepage - Testimonial Section Styles */
+.testimonial-card .card-footer {
+    background: none;
+    border-top: none;
+}
+
+.testimonial-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* ============================================= */
+/* MENGUBAH WARNA TEMA UTAMA (PRIMARY) BOOTSTRAP  */
+/* ============================================= */
+:root {
+    --bs-primary: #8B0000;
+    --bs-primary-rgb: 139, 0, 0;
+}
+/* ============================================= */
+/* MENIMPA STYLE TOMBOL BOOTSTRAP SECARA LANGSUNG */
+/* ============================================= */
+
+/* Untuk Tombol Solid (btn-primary) */
+.btn-primary {
+    background-color: #8B0000;
+    border-color: #8B0000;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #6a0000 !important; /* Warna sedikit lebih gelap saat hover */
+    border-color: #5c0000 !important;
+    box-shadow: none !important; /* Menghilangkan bayangan biru default */
+}
+
+/* Untuk Tombol Outline (btn-outline-primary) */
+.btn-outline-primary {
+    color: #8B0000;
+    border-color: #8B0000;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+    color: #fff;
+    background-color: #8B0000 !important;
+    border-color: #8B0000 !important;
+    box-shadow: none !important;
+}
+/* ============================================= */
+/* SEWA LAPANGAN PAGE STYLES            */
+/* ============================================= */
+
+.hero-sewa-lapangan {
+    background-color: #8B0000; /* Warna dasar maroon */
+    /* SVG di bawah ini menciptakan efek gelombang */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%23ffffff' fill-opacity='0.1' d='M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,106.7C672,117,768,171,864,176C960,181,1056,139,1152,117.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 2.5rem 2rem; /* DIUBAH: Padding diperkecil agar area tidak terlalu tinggi */
+    color: white;
+}
+
+.filter-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.hero-sewa-lapangan h1 {
+    font-size: 2.0rem; /* Ukuran default h1 Bootstrap, lebih kecil dari display-5 */
+}
+
+.hero-sewa-lapangan p {
+    font-size: 1.0rem; /* Sedikit lebih kecil dari fs-4 */
+}
+/* ============================================= */
+/* MAIN BARENG PAGE STYLES              */
+/* ============================================= */
+
+.hero-main-bareng {
+    background-color: #8B0000; /* Warna dasar maroon */
+    /* SVG di bawah ini menciptakan efek gelombang */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%23ffffff' fill-opacity='0.1' d='M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,106.7C672,117,768,171,864,176C960,181,1056,139,1152,117.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 2.5rem 2rem;
+    color: white;
+}
+
+.hero-main-bareng h1 {
+    font-size: 2.5rem;
+}
+
+.hero-main-bareng p {
+    font-size: 1.1rem;
+}
+/* ============================================= */
+/* ABOUT US PAGE STYLES                 */
+/* ============================================= */
+
+.hero-about {
+    background-color: #8B0000; /* Warna dasar maroon */
+    /* SVG di bawah ini menciptakan efek gelombang */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%23ffffff' fill-opacity='0.1' d='M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,106.7C672,117,768,171,864,176C960,181,1056,139,1152,117.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 2.5rem 2rem;
+    color: white;
+}
+
+.hero-about h1 {
+    font-size: 2.5rem;
+}
+
+.hero-about p {
+    font-size: 1.1rem;
+}
+
+/* Timeline Component */
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eee;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline>li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.timeline>li .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #8B0000;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+}
+.team-card-img {
+    height: 280px; /* Atur tinggi gambar sesuai selera */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+/* Responsive Timeline */
+@media (max-width: 767px) {
+    .timeline:before {
+        left: 40px;
+    }
+    .timeline>li .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+        float: right;
+    }
+    .timeline>li .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+}
+/* ============================================= */
+/* CONTACT PAGE STYLES                  */
+/* ============================================= */
+
+.hero-contact {
+    background-color: #8B0000; /* Warna dasar maroon */
+    /* SVG di bawah ini menciptakan efek gelombang */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%23ffffff' fill-opacity='0.1' d='M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,106.7C672,117,768,171,864,176C960,181,1056,139,1152,117.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 2.5rem 2rem;
+    color: white;
+}
+
+.hero-contact h1 {
+    font-size: 2.2rem;
+}
+
+.hero-contact p {
+    font-size: 1rem;
+}
+
+/* Membuat Peta Responsif */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 75%; /* Rasio aspek untuk peta */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 0.5rem; /* Membuat sudut peta sedikit melengkung */
+}
+/* ============================================= */
+/* REGISTER & LOGIN PAGE STYLES         */
+/* ============================================= */
+
+.auth-page-bg {
+    /* Ganti URL ini dengan gambar latar Anda sendiri. Saya menggunakan contoh dari Unsplash */
+    background-image: url('https://images.unsplash.com/photo-1542751371-6593585549d4?q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    /* Memastikan background menutupi seluruh tinggi halaman */
+    min-height: calc(100vh - 56px); /* 100% tinggi viewport dikurangi tinggi header */
+}
+
+.form-auth-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar semi-transparan */
+    -webkit-backdrop-filter: blur(10px); /* Efek blur untuk browser Safari */
+    backdrop-filter: blur(10px); /* Efek blur modern */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Style untuk password strength bar */
+.progress-password {
+    height: 5px;
+}
