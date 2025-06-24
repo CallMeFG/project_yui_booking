@@ -11,7 +11,6 @@
         body {
             background-color: #f4f7f6;
         }
-
         .sidebar {
             position: fixed;
             top: 0;
@@ -21,18 +20,15 @@
             padding: 20px;
             background-color: #1E1E1E;
         }
-
         .sidebar .nav-link {
             color: #A0A0A0;
             border-radius: .25rem;
         }
-
         .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
             color: #FFFFFF;
             background-color: #8B0000;
         }
-
         .main-content {
             margin-left: 250px;
             padding: 20px;
@@ -40,12 +36,10 @@
             color: #212529;
             min-height: 100vh;
         }
-
         .card {
             background-color: #FFFFFF;
             border-color: #dee2e6;
         }
-
         /* --- Perbaikan untuk Dropdown di dalam Tabel Responsif --- */
         .table-responsive .dropdown,
         .table-responsive .btn-group {

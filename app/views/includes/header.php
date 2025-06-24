@@ -15,7 +15,6 @@ $current_url = $_SERVER['REQUEST_URI'];
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand navbar-brand-custom" href="<?php echo URLROOT; ?>">YUI BOOKING</a>
@@ -54,7 +53,7 @@ $current_url = $_SERVER['REQUEST_URI'];
                                 <?php echo $_SESSION['user_name']; ?>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUser">
-                                <li><a class="dropdown-item" href="<?php echo URLROOT; ?>/users/dashboard">Dashboard</a></li>
+                                <li><a class="dropdown-item" href=" <?php echo URLROOT; ?>/dashboard">Dashboard</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
